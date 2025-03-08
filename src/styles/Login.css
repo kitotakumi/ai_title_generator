@@ -1,0 +1,90 @@
+/* src/styles/Login.css */
+
+/* ログイン画面専用コンテナ */
+.login-container {
+    max-width: 700px;
+    margin: 0 auto;        /* 0に変更 */
+    padding: 40px 20px;     /* 40px 20pxに変更 */
+    text-align: center;
+  }
+  
+  /* 入力フォーム全体をカード風に */
+  .login-card {
+    position: relative; /* 子要素の絶対配置の基準になる */
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    padding-top: 45px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+/* ID/パスワード取得用リンクの配置を右下に固定 */
+  .id-password-link {
+    position: absolute;
+    bottom: 15px;
+    right: 23px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .id-password-link a {
+    color: #777;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .id-password-link a:hover {
+    color: #0a499c;
+  }
+  
+  .login-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* フォーム内の入力フィールド */
+  .login-card input[type="text"],
+  .login-card input[type="password"] {
+    width: 80%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-card input[type="text"]:focus,
+  .login-card input[type="password"]:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+    outline: none;
+  }
+
+  
+  /* ログインボタン */
+  .login-card button {
+    display: block;       /* ブロック要素として表示 */
+    background-color: #07254c;
+    color: #fff;
+    margin: 0 auto; 
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-card button:hover {
+    background-color: #07254c;
+    transform: scale(1.05);
+  }
+  
+  /* エラーメッセージ */
+  .error-message {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }

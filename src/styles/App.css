@@ -1,0 +1,214 @@
+
+
+/* 全体コンテナ */
+.app-container,
+.ai-title-writing-tool {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Noto Sans JP";
+  color: #202124;
+  background-color: #fff;
+}
+
+/* アプリのロゴ画像のコンテナ */
+.app-logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* アプリのロゴ画像 */
+.app-logo {
+  max-width: 100%;
+  height: auto;
+  /* 必要に応じて固定サイズにする場合 */
+  /* width: 200px; */
+}
+
+/* 入力フォーム */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.text-input {
+  flex-grow: 1;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 1px solid #dadce0;
+  border-radius: 520px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.text-input:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+  outline: none;
+}
+
+.submit-button {
+  background-color: #07254c;
+  color: #fff;
+  border: none;
+  /* 固定サイズ（例：48px x 48px） */
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin-left: 12px;
+  /* 完全な円形にするために */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #07254c;
+  transform: scale(1.09);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-button:disabled {
+  background-color: #07254c;
+  cursor: not-allowed;
+}
+
+/* スピナー */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 共通カードスタイル */
+.card {
+  background-color: #fefefe;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* レスポンス表示部分 */
+.response-container {
+  margin-top: 40px;
+}
+
+.response-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #07254c;
+  border-bottom: 2px solid #dadce0;
+  padding-bottom: 8px;
+}
+
+.section-title-result {
+  margin-bottom: -15px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #07254c;
+  border-bottom: 2px solid #dadce0;
+  padding-bottom: 8px;
+}
+
+
+/* 結果リスト */
+.result-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #1a73e8;
+}
+
+/* Google検索結果用 */
+.google-result-container pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #202124;
+  line-height: 1.5;
+}
+
+/* 説明ブロック */
+.description-block {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5f6368;
+  margin-bottom: 20px;
+}
+
+.link-container {
+  text-align: center;
+}
+
+.notion-link {
+  display: inline-block;
+  background-color: #07254c;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.notion-link:hover {
+  background-color: #07254c;
+  transform: scale(1.02);
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
