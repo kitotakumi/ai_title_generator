@@ -4,7 +4,7 @@
 - リポジトリは社内向けに作成したアプリをマスク・簡略化した模倣版です。
 
 ## アーキテクチャ図
-<img alt="architecture" src="https://github.com/kitotakumi/ai_title_generator/blob/main/ai_title_generator_architecture.png" style="max-width: 530px; height: auto;" />
+<img alt="architecture" src="https://github.com/kitotakumi/ai_title_generator/blob/main/ai_title_generator_architecture.png"/>
 
 
 ## 主な機能
