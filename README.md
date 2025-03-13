@@ -12,9 +12,9 @@
 - データベース：AWS DynamoDB
 - ホスティング：AWS Amplify
 - ユーザー認証：AWS Congnito
+- セキュリティ：AWS API Gateway、AWS WAF
 - AI：Dify、OpenAI
 - Google API：Suggest API、Custom Search API
-- セキュリティ：AWS API Gateway、AWS WAF
 
 
 ## 主な機能
@@ -32,28 +32,37 @@
 ## ディレクトリ構造
 ```
 src
-├── App.js
+├── App.tsx
 ├── amplifyconfiguration.json
 ├── aws-exports.js
 ├── components
-│   ├── ApiResponseDisplay.js
+│   ├── ApiResponseDisplay.tsx
 │   ├── Auth
-│   │   ├── AuthProvider.jsx
-│   │   └── Login.jsx
-│   ├── CommonComponents.jsx
-│   ├── Dashboard.jsx
-│   ├── GoogleResultDisplay.js
-│   └── KeywordInput.js
+│   │   ├── AuthProvider.tsx
+│   │   └── Login.tsx
+│   ├── CommonComponents.tsx
+│   ├── Dashboard.tsx
+│   ├── GoogleResultDisplay.tsx
+│   └── KeywordInput.tsx
 ├── index.css
-├── index.js
+├── index.tsx
 ├── services
-│   ├── difyApi.js
-│   └── googleApi.js
+│   ├── difyApi.ts
+│   └── googleApi.ts
 ├── styles
 │   ├── App.css
 │   └── Login.css
 └── utils
-    └── userId.js
+    └── userId.ts
+
+public
+├── favicon.ico
+├── index.html
+├── logo.jpg
+├── logo.png
+├── manifest.json
+├── package-lock.json
+└── robots.txt
 ```
 
 
