@@ -1,6 +1,10 @@
 # AIタイトル生成ツール
 - このアプリは、検索キーワードを入力するとタイトル採点アルゴリズムに基づいて12個の記事タイトル案とGoogleの検索上位10件とGoogleサジェスト一覧を生成するWebアプリです。
 - リポジトリは社内向けに作成したアプリをマスク・簡略化した模倣版です。
+
+## アーキテクチャ図
+<img alt="architecture" height="400px" src="https://github.com/kitotakumi/ai_title_generator/blob/main/architecture.png"/>
+  
 ## 技術スタック
 - フロントエンド：React
 - バックエンド：Python
@@ -11,9 +15,6 @@
 - AI：Dify、OpenAI
 - Google API：Suggest API、Custom Search API
 - セキュリティ：AWS API Gateway、AWS WAF
-
-## アーキテクチャ図
-<img alt="architecture" height="400px" src="https://github.com/kitotakumi/ai_title_generator/blob/main/architecture.png"/>
 
 
 ## 主な機能
