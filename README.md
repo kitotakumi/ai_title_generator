@@ -4,7 +4,10 @@
 
 ## アーキテクチャ図
 <img alt="architecture" height="400px" src="https://github.com/kitotakumi/ai_title_generator/blob/main/architecture.png"/>
-  
+
+## デモンストレーション
+https://github.com/user-attachments/assets/ccc70e0b-3b31-47a3-bc48-c83e3372dcea
+
 ## 技術スタック
 - フロントエンド：React
 - バックエンド：Python
