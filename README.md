@@ -71,7 +71,7 @@ public
 
 ## セットアップ
 ```
-git clone https://github.com/cuebic/generative_ai/title_generator title_generator
+git clone https://github.com/kitotakumi/ai_title_generator.git title_generator
 cd title_generator
 npm install
 ```
