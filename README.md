@@ -19,6 +19,9 @@ https://github.com/user-attachments/assets/ccc70e0b-3b31-47a3-bc48-c83e3372dcea
 - AI：Dify、OpenAI
 - Google API：Suggest API、Custom Search API
 
+## 改善点
+- フロントエンドからAPIを叩いてしまっているため、Lambdaを噛ませて叩く設定にするべきである。
+
 
 ## 主な機能
 
