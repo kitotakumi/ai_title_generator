@@ -20,7 +20,8 @@ https://github.com/user-attachments/assets/ccc70e0b-3b31-47a3-bc48-c83e3372dcea
 - Google API：Suggest API、Custom Search API
 
 ## 改善点
-- フロントエンドからAPIを叩いてしまっているため、Lambdaを噛ませて叩く設定にするべきである。
+- フロントエンドからAPIを叩いてしまっているため、API Gateway, Lambdaを噛ませて叩くべき。
+- googleログインを実装して、社内ドメインの場合のみ通すという実装が理想。
 
 
 ## 主な機能
